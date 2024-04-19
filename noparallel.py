@@ -11,7 +11,6 @@ def compute_pi(N):
         
     return total_sum * 4
 
-# Example usage:
-N = 1000000 # Number of rectangles
+N = 1000000 
 approx_pi = compute_pi(N)
 print(f"Approximated value of pi: {approx_pi}")

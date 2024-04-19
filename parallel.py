@@ -21,10 +21,8 @@ def compute_pi_parallel(N, processes):
     pool.join()
     return sum(partial_sums) * 4
 
-# This block ensures that the code that follows will only be executed if the script is run directly,
-# not if it is imported as a module.
 if __name__ == '__main__':
-    N = 1000000  # Number of rectangles
-    processes = 4  # Number of processes
+    N = 1000000  
+    processes = 4 
     approx_pi = compute_pi_parallel(N, processes)
     print(f"Approximated value of pi using multiprocessing: {approx_pi}")
